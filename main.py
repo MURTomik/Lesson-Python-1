@@ -4,7 +4,8 @@ print('Hello, Dmitriy!!!')
 print('Практическое задание для урока 2')
 
 while (True):
-    num_work = int(input('Введите номер задания: '))
+    print(' ')
+    num_work = int(input('Введите номер задания (выход - 0): '))
 
     if num_work == 1:
         # Задание №1
@@ -64,7 +65,11 @@ while (True):
         # Задание №6
         print('Задания кончились')
 
+    elif num_work == 0:
+        break
     else:
-        next = int(input('Хотите продолжить введите 1, иначе 0'))
-        if next != 1:
-           break
+        break
+
+    next = int(input('Хотите продолжить введите 1'))
+    if next != 1:
+       break
