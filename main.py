@@ -49,24 +49,55 @@ while (True):
         elif (age == 30 or age == 40) and (weight < 50 or weight > 120):
             vivod = 'кг, срочно улучшить показатели по весу !'
         else:
-            vivod = 'кг, предлагаем стать лицом нашего медицинского учреждения !'
-
-        print('Пациенту,',surname,name,', возраст',age,'лет,','вес',weight,vivod)
+            vivod = 'кг, предлагаем Вам стать лицом нашего медицинского учреждения !'
+        print('Пациент,{} {}, возраст {} лет, вес {} {}'.format(surname,name,age,weight,vivod))
 
     elif num_work == 4:
         # Задание №4
-        print('Задания кончились')
+        print(' ')
+        print('Задание №4')
+        spisok1 = input('Введите первый список значений через запятую: ')
+        spisok2 = input('Введите второй список значений через запятую: ')
+        spisok1 = spisok1.split(',')
+        spisok2 = spisok2.split(',')
+        print(spisok1, spisok2)
+        spisok = set(spisok1) - set(spisok2)
+        print(list(spisok))
 
     elif num_work == 5:
         # Задание №5
-        print('Задания кончились')
-
+        print(' ')
+        print('Задание №5')
+        while (True):
+            date_chislo = input('Введите дату: ')
+            date_chislo = date_chislo.split('.')
+            month = ['января','февраля','марта','апреля','мая','июня','июля','августа','сентября','октября','ноября','декабря']
+            print(date_chislo)
+#            print(date_chislo[1])
+            if len(date_chislo) == 3:
+                if 0 < int(date_chislo[1]) < 13:
+                    print('Дата: {} {} {} года'.format(date_chislo[0],month[int(date_chislo[1])-1],date_chislo[2]))
+                    break
+                else:
+                    print('Дата неверная')
+            else:
+                print('Дата неверная')
     elif num_work == 6:
         # Задание №6
-        print('Задания кончились')
+        print(' ')
+        print('Задание №6')
+        spisok1 = input('Введите список значений через запятую: ')
+        #spisok2 = input('Введите список2 через запятую: ')
+        spisok1 = spisok1.split(',')
+        #spisok2 = spisok2.split(',')
+        print(spisok1)
+        spisok = set(spisok1)
+        #print(spisok)
+        print(list(spisok))
+        #- set(spisok2))
 
-    elif num_work == 0:
-        break
+#    elif num_work == 0:
+#       break
     else:
         break
 
