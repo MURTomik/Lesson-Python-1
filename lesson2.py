@@ -30,7 +30,7 @@ while (True):
             else:
                 print('Задание не читаем!!!')
 
-#####
+
     elif num_work == 3:
         # Задание №3
         print(' ')
