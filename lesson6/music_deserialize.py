@@ -1,3 +1,6 @@
+# 2: Создать модуль music_deserialize.py. В этом модуле открыть файлы group.json и group.pickle, прочитать из них информацию.
+# Получить объект — словарь из предыдущего задания.
+
 import json, pickle
 
 with open('group1.pickle', 'rb') as f:
