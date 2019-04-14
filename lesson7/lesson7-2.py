@@ -10,5 +10,5 @@ spisok = [-1,9,3,4,12,-3,-6,21,18,27,24,-5,-7]
 #[9,3,21,18,27]
 rezult = []
 
-rezult = [number for number in spisok if number%3 == 0 and number%4 != 0 and number >= 0]
+rezult = [number for number in spisok if number > 0 and number%3 == 0 and number%4 != 0]
 print(rezult)
